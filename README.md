@@ -1,6 +1,6 @@
 [![wc-title.jpg](https://iili.io/JVp0PI.jpg)](https://iili.io/JVp0PI.jpg)
 
-### _Created by Tyler Bates & Nathan Watkins_
+### _Created by Tyler Bates & Nathan Watkins & DJ Zevenbergen_
 
 ## _Description_
 
@@ -62,7 +62,7 @@ dotnet test
 
 #### MIT License
 
-### Copyright (c) 2020 Tyler Bates & Nathan Watkins @ Epicodus
+### Copyright (c) 2020 Tyler Bates & Nathan Watkins & DJ Zevenbergen @ Epicodus
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
