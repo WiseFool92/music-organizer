@@ -10,18 +10,20 @@ Music Organizer is an interactive program that will take user inputted music fro
 ## _Setup/Installation Requirements_ 
 
 1. Clone this projects repository into your local directory following [these](https://www.linode.com/docs/development/version-control/how-to-install-git-and-clone-a-github-repository/) instructions.
+
 2. Open the now local project folder with [VSC](https://code.visualstudio.com/Download) or an equivalent
+
 3. Download <a href="https://docs.microsoft.com/en-us/dotnet/core/install/runtime?pivots=os-windows">.NET Core</a> then enter the following command in the terminal to confirm installation (2.2 or higher)
 ```sh
 dotnet -- version
 ``` 
-
 4. Still in the command line, enter
 ```sh
 dotnet tool install -g 
 dotnet-script
 ```
 5. Download [ASP.NET Core](https://dotnet.microsoft.com/download)_ To enable live viewing on a local server
+
 6. Open project, navigate to the containing folder of the project & Enter the following command to confirm build stability 
 
 ```sh
