@@ -6,16 +6,38 @@
 
 Music Organizer is an interactive program that will take user inputted music from different genres and dynamically organize them by category. The user will then have access to these lists and each one will have click functions to give further details of the list item.
 
-## _Setup_
 
-- Clone this projects repository into your local directory following <a href="https://www.linode.com/docs/development/version-control/how-to-install-git-and-clone-a-github-repository/">these</a> instructions.<br>
-- Install .NET Core using <a href="https://docs.microsoft.com/en-us/dotnet/core/install/runtime?pivots=os-windows">this</a> link.<br>
-- In your terminal, navigate to the "MusicOrganizer" directory within the project folder.<br>
-- From within this directory, enter the following into your terminal:<br>
+## _Setup/Installation Requirements_ 
+
+1. Clone this projects repository into your local directory following [these](https://www.linode.com/docs/development/version-control/how-to-install-git-and-clone-a-github-repository/) instructions.
+2. Open the now local project folder with [VSC](https://code.visualstudio.com/Download) or an equivalent
+3. Download <a href="https://docs.microsoft.com/en-us/dotnet/core/install/runtime?pivots=os-windows">.NET Core</a> then enter the following command in the terminal to confirm installation (2.2 or higher)
+```sh
+dotnet -- version
+``` 
+
+4. Still in the command line, enter
+```sh
+dotnet tool install -g 
+dotnet-script
 ```
-$ dotnet run
+5. Download [ASP.NET Core](https://dotnet.microsoft.com/download)_ To enable live viewing on a local server
+6. Open project, navigate to the containing folder of the project & Enter the following command to confirm build stability 
+
+```sh
+dotnet run build 
 ```
-The program will begin within your terminal. Enjoy!
+
+7. Within that same containing folder enter the following to open a live server w/auto updated viewing
+```sh
+dotnet watch run
+``` 
+8. If you want to run tests navigate to the .Tests containing folder and run
+
+```sh
+dotnet test
+```
+9. Enjoy
 
 ## _Technology Used_
 
