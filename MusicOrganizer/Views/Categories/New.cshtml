@@ -1,3 +1,11 @@
-@using MusicOrganizer.Models;
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-<link rel="stylesheet" type="text/css" href="~/css/styles.css">
+@{
+  Layout = "_Layout";
+}
+
+<h1>Add a category</h1>
+<p>Add a category here:</p>
+
+<form action="/categories" method="post">
+  <input id="categoryName" name="categoryName" placeholder="Category name">
+  <button class="btn" type="submit">Add</button>
+</form>

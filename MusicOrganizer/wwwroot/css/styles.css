@@ -1,4 +1,14 @@
-#btnLocation {
+div#navBar {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  color:#CCC;
+  background:#333;
+  padding:8px;
+}
+
+.btn {
   background-color: black;
   display:inline-block;
   padding:0.3em 1.2em;
@@ -15,7 +25,7 @@
   text-align:center;
   transition: all 0.2s;
 }
-#btnLocation:hover {
+.btn:hover {
   border-color: rgba(255,255,255,1);
   transform: scale(1.1);
 }

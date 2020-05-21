@@ -1,6 +1,6 @@
-@using MusicOrganizer.Models;
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-<link rel="stylesheet" type="text/css" href="~/css/styles.css" >
+@{
+  Layout = "_Layout";
+}
 
 <h1>Music Categories</h1>
 
@@ -13,5 +13,3 @@
   {
     <h3><a href='/categories/@category.Id'>@category.Name</a></h3>
   }
-
-  <p><a href='/'><button id="btnLocation">Back Home</button></a></p>

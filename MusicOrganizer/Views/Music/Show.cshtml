@@ -1,3 +1,12 @@
-@using MusicOrganizer.Models;
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-<link rel="stylesheet" type="text/css" href="~/css/styles.css">
+@{
+  Layout = "_Layout";
+}
+
+<h1>To Do List Item Details: </h1>
+
+<h2>@Model["item"].Description</h2>
+<h3>Category: @Model["category"].Name</h3> 
+
+@* Because our model data resides in a Dictionary named model, we use square bracket notation to access the two objects. We also add a line detailing which Category this Item belongs to. *@
+
+<a href='/categories/@Model["category"].Id/muisc/new'>Add another music genre</a>
