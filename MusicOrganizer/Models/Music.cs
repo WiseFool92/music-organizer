@@ -9,10 +9,17 @@ namespace MusicOrganizer.Models
     public string ImageURL { get; set; }
     private static List<Music> _instances = new List<Music> {};
 
+      public Music (string description)
+      {
+        Description = description;
+        _instances.Add(this);
+        Id = _instances.Count;
+      }
+
       public Music (string description, string imageURL)
       {
         ImageURL = imageURL;
-        Description = description;
+        Description = description;  // duplicate constructor to overload for argument edge cases
         _instances.Add(this);
         Id = _instances.Count;
       }
@@ -28,8 +35,8 @@ namespace MusicOrganizer.Models
       }
 
       public static Music Find(int searchId)
-    {
-      return _instances[searchId-1];
-    }
+      {
+        return _instances[searchId-1];
+      }
   }
 }
