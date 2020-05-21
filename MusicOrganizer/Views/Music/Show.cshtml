@@ -5,8 +5,9 @@
 <h1>Artist/Album Details: </h1>
 
 <h2>@Model["music"].Description</h2>
-<h3>Category: @Model["category"].Name</h3> 
-
+<h3>Category: @Model["category"].Name</h3>
+<img src='@Model["music"].ImageURL'> 
+<br>
 @* Because our model data resides in a Dictionary named model, we use square bracket notation to access the two objects. We also add a line detailing which Category this Item belongs to. *@
 
 <a href='/categories/@Model["category"].Id/music/new'>Add another music genre</a>
