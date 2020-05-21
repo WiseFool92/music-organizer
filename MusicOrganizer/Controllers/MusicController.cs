@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
+using MusicOrganizer.Models;
 using System.Collections.Generic;
 
 namespace MusicOrganizer.Controllers

@@ -44,12 +44,19 @@ namespace MusicOrganizer.Controllers
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Category foundCategory = Category.Find(categoryId); // Using the categoryId provided as an argument, we locate the Category object our new Music should belong to and call it foundCategory.
-      Music newMusic = new Music(MusicDescription); // We then create a new Music object with the user's form input.
+      Music newMusic = new Music(musicDescription); // We then create a new Music object with the user's form input.
       foundCategory.AddMusic(newMusic); // We add the newMusic to the foundCategory with our existing AddMusic() method.
       List<Music> categoryMusic = foundCategory.Music; // We retrieve all other Music that correspond to this category and add it to our model. We do this because the view we'll render at the end of this route requires this information.
       model.Add("music", categoryMusic);
       model.Add("category", foundCategory); // We also add the foundCategory to our model.
       return View("Show", model); // Finally, we pass in our model data to View(), instructing it to render the Category detail page, which is the Show.cshtml view.
+    }
+
+    [HttpPost("/categories/delete")]
+    public ActionResult DeleteAll()
+    {
+      Category.ClearAll();
+      return View();
     }
   }
 }
