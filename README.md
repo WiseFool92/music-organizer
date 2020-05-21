@@ -51,12 +51,12 @@ dotnet test
 
 |Behavior|Input|Output|
 |-----|-----|-----|
-|Program will have user input a base word|"cat"|"cat"|
-|Program will have user input a string of words to compare to base word|"the cat was at the cathedral"|repeat string|
-|Program will compare word to string to determine how many occurences take place|"cat" --> "the cat was at the cathedral"|"'cat' appears 1 time."|
-|Program will remove punctuation and capitalization from input string|"cat,cat.Cats!CAT?"|"cat cat cats cat"|
-|Program will return the number of occurences of entered word in entered string|"cathy the cat was at the cathedral."|"number of occurences: 1"|
-
+|User is greeted and given option to either add a new category of music|"create new category"|"5000/category/new"|
+|User is given additional option to view existing categories|"view category"|"5000/category/show"|
+|User will be offered to create a new category |"Click Create Category"|"5000/category"|
+|User populates the category with a genre |"input"|"5000/category/{genre}"|
+|Program adds input category to list of categories|"Rock"|"Rock"|
+|User is prompt to add item(artist) to category(rock)|"WolfMother"|"5000/category/{Rock}/{WoflMother}"|
 
 ## _Legal_
 
